@@ -1,0 +1,60 @@
+.home-body
+{
+	background-color: white;
+}
+
+#robin
+{
+	mix-blend-mode:hard-light;
+	font-size:40px;
+	font-weight: 900;
+	font-family: 'Handlee', cursive;
+	margin-bottom: 20px;
+}
+.menu
+{
+	position: fixed;
+	top:8%;
+	left:4%;
+    font-size: 20px;
+	display: block;
+	z-index: 100;
+	font-weight: 600;
+	font-family: 'Handlee', cursive;
+}
+.menu a
+{
+
+	color:black;
+	text-decoration: none;
+	display:block;
+	margin-bottom: 10px;
+}
+.menu-background
+{
+	background-color: green;
+	border
+
+}
+
+.w3-hover-opacity
+{
+	height:400px;
+	width: 48%;
+	opacity: 1;
+	margin:4px;
+}
+
+.panel
+{
+	display: flex;
+	flex-wrap: wrap;
+	position:relative;
+	z-index: 100%;
+	left:20%;
+	margin-top:40px;
+    width: 80%; 
+    height: 90%; 
+    overflow-x: hidden;
+    overflow-y: auto;
+}

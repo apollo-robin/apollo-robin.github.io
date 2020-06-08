@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ROBiN.</title>
+	<link rel="icon" href="rr.png" type="image/type"  />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="design.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Handlee|Pacifico|Chewy" rel="stylesheet" /> 
+</head>
+<body class="home-body">
+
+<div class="menu-background">
+	<div class="menu"> 
+		<a href="index.html" id="robin"> ROBiN </a>
+		<a href="clicks.html" class="clicks"> CLiCKS </a>
+		<a href="lyrics.html" class="lyrics"> LYRiCS </a>
+		<a href="contact.html" class="contact" >  Contact </a>
+</div>
+</div>
+<div class="panel">
+	<img src="img1.jpg" style="cursor:pointer"onclick="onClick(this)" class="w3-hover-opacity" >
+	<img src="img2.jpg" style="cursor:pointer"onclick="onClick(this)" class="w3-hover-opacity" >
+	<img src="img2.jpg" style="cursor:pointer"onclick="onClick(this)" class="w3-hover-opacity" >
+	<img src="img3.jpg" style="cursor:pointer"onclick="onClick(this)" class="w3-hover-opacity" >
+	<img src="img4.jpg" style="cursor:pointer"onclick="onClick(this)" class="w3-hover-opacity" >
+	<img src="img5.jpg" style="cursor:pointer"onclick="onClick(this)" class="w3-hover-opacity" >
+	<img src="img6.jpg" style="cursor:pointer"onclick="onClick(this)" class="w3-hover-opacity" >
+
+</div>
+
+
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style="width:100%">
+  </div>
+</div>
+
+<script>
+function onClick(element) 
+{
+   document.getElementById("img01").src = element.src;
+   document.getElementById("modal01").style.display = "block";
+}
+</script>
+
+</body>
+</html>
