@@ -22,6 +22,7 @@
 	font-weight: 600;
 	font-family: 'Handlee', cursive;
 }
+
 .menu a
 {
 
@@ -30,31 +31,133 @@
 	display:block;
 	margin-bottom: 10px;
 }
-.menu-background
-{
-	background-color: green;
-	border
 
+
+.preview 
+{
+	width: 100%;
 }
 
-.w3-hover-opacity
-{
-	height:400px;
-	width: 48%;
-	opacity: 1;
-	margin:4px;
-}
-
-.panel
+.row 
 {
 	display: flex;
-	flex-wrap: wrap;
-	position:relative;
-	z-index: 100%;
-	left:20%;
-	margin-top:40px;
-    width: 80%; 
-    height: 90%; 
-    overflow-x: hidden;
-    overflow-y: auto;
+	position: relative;
+	left:16%;
+	margin-top: 60px;
+	width:82%;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.row > .col 
+{
+  padding: 0 8px;
+}
+
+.col 
+{
+  float: left;
+  width: 100%;
+}
+
+.modal 
+{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 16%;
+  top: 58px;
+  width: 82%;
+  height: 88%;
+  overflow: auto;
+  
+}
+
+
+.slide {
+  display: none;
+
+}
+
+.image-slide {
+	width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.modal-preview {
+	width: 100%;
+}
+
+
+img.preview,  
+{
+  opacity: 1;
+}
+img.modal-preview
+{
+	opacity: 0.6;
+}
+
+img.active, .preview:hover,.modal-preview:hover
+{
+  opacity: 1;
+}
+
+img.hover-shadow 
+{
+  transition: 0.3s;
+}
+
+.hover-shadow:hover 
+{
+  cursor: pointer;
+  opacity: 0.9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+
+.close 
+{
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,.close:focus 
+{
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.previous,.next 
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next 
+{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.previous:hover,.next:hover 
+{
+  transform: scale(2);
+  text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
