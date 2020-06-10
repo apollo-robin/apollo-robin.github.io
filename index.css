@@ -1,0 +1,99 @@
+
+html,body
+{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+}
+
+#particles-js
+{
+	height: 100%;
+	width: 100%;
+}
+
+.content
+{
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;	
+	position: fixed;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.content h1
+{
+	font-family: 'Handlee', cursive;
+	color: #fff;
+	opacity: 0.8;
+	text-shadow: 0px 0px 300px #000;
+	font-size: 300%;
+	letter-spacing: 2px;
+}
+.btn
+{
+	border-radius: 9px;
+	font-family: 'Anaheim';
+	color: #fff;
+	font-size: 135%;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-decoration: none;
+	padding: 10px 20px;
+	border:solid #c0c0c0 1px;
+	transition: 0.6s ease;
+  	border-radius: 0 3px 3px 0;
+  	user-select: none;
+}
+.btn:hover
+{
+	transform: scale(1.2);
+	border:solid #ff0040;
+	font-size: 150%;
+}
+
+.waves {
+  position: fixed;
+  width: 100%;
+  height: 24px;
+  bottom: 0;
+  margin-bottom: -7px;
+}
+/* Animation */
+.parallax>use {
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+.parallax>use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax>use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax>use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax>use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 20px;
+    min-height: 20px;
+  }
+}
