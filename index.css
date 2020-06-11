@@ -93,7 +93,7 @@ html,body
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
-    height: 20px;
-    min-height: 20px;
+    height: 24px;
+    min-height: 24px;
   }
 }
